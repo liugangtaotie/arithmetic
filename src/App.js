@@ -1,8 +1,11 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import {RangeNumberNoRepeatSort} from './arithmetic/common.js'
 
 function App() {
+  console.info(1111,RangeNumberNoRepeatSort())
+
   return (
     <div className="App">
       <header className="App-header">
