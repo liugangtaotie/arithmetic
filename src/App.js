@@ -1,10 +1,11 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import {RangeNumberNoRepeatSort} from './arithmetic/common.js'
+import {RangeNumberNoRepeatSort,BinarySearch} from './arithmetic/common.js'
 
 function App() {
-  console.info(1111,RangeNumberNoRepeatSort())
+  console.info(1111,RangeNumberNoRepeatSort());
+  console.info(2222,BinarySearch([1,2,3,4,5,6],3,0,5));
 
   return (
     <div className="App">

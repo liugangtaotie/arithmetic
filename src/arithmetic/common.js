@@ -8,6 +8,20 @@ export function RangeNumberNoRepeatSort() {
     return resultNoRepeat.sort();
 }
 
+// 算法二   js 实现二叉查找树
+export function BinarySearch(arr,str,leftIndex,rightIndex) {
+    const mid = Math.floor((leftIndex+rightIndex)/2);
+    const midValue = arr[mid];
+    if(midValue>str){
+        BinarySearch(arr,str,leftIndex,mid);
+    }else if(midValue<str){
+        BinarySearch(arr,str,mid,rightIndex);
+    }else{
+        return mid
+    }
+}
+
 export default {
     RangeNumberNoRepeatSort,
+    BinarySearch,
 }
